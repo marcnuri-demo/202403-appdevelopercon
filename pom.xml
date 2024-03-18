@@ -15,6 +15,9 @@
   <description>Demo project for Spring Boot</description>
   <properties>
     <java.version>17</java.version>
+    <jkube.generator.name>marcnuri/app-developer-con</jkube.generator.name>
+    <jkube.createExternalUrls>true</jkube.createExternalUrls>
+    <jkube.domain>192.168.39.41.nip.io</jkube.domain>
   </properties>
   <dependencies>
     <dependency>
@@ -28,6 +31,11 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.jkube</groupId>
+        <artifactId>kubernetes-maven-plugin</artifactId>
+        <version>1.16.1</version>
       </plugin>
     </plugins>
   </build>
